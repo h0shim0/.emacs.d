@@ -1,0 +1,82 @@
+;;; -*- coding: utf-8 -*-
+(("/Users/dor0thy/.emacs.d/init.el" . 308)
+ ("/Users/dor0thy/.emacs.d/elpa/color-theme-20080305.34/color-theme-autoloads.el" . 4768)
+ ("/Users/dor0thy/.emacs.d/"
+  (dired-filename . "/Users/dor0thy/.emacs.d/init.el"))
+ ("/Users/dor0thy/.emacs" . 151)
+ ("/Users/dor0thy/.emacs.d/elpa/ujelly-theme-20140504.1852/ujelly-theme-autoloads.el" . 413)
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/sources/JDBCSample.java" . 665)
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/servlets-exercise/index.jsp" . 4)
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/sources/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/sources/JDBCSample.java"))
+ ("/sshx:sit:/home/"
+  (dired-filename . "/sshx:sit:/home/sit"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/sources/JDBCSample.java" . 363)
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/index.jsp" . 283)
+ ("/Users/dor0thy/.emacs.d/recentf" . 1366)
+ ("/Users/dor0thy/.emacs.d/elpa/web-mode-8.0.4/web-mode-autoloads.el" . 402)
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/sources"))
+ ("/Users/"
+  (dired-filename . "/Users/.localized"))
+ ("/sshx:sit:/home/sit/Pictures/"
+  (dired-filename . "/sshx:sit:/home/sit/Pictures/.."))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps"))
+ ("/sshx:sit:/home/sit/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/classes/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/classes/.."))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/sources"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/sources/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/WEB-INF/sources/JDBCSample.java"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/servlets-exercise/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/servlets-exercise/index.jsp"))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/.."))
+ ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/select_pref/"
+  (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/select_pref/.."))
+ ("/Users/dor0thy/.zshrc" . 674)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/"
+  (dired-filename . "/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers"))
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/"
+  (dired-filename . "/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/lesson_kartes_controller.rb"))
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/lesson_kartes_controller.rb" . 5165)
+ ("/Users/dor0thy/.emacs.d/elpa/markdown-mode-20140914.1012/markdown-mode-autoloads.el" . 694)
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/dotfiles/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/dotfiles/.."))
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents"))
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs"))
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app"))
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/controllers"))
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/controllers/lesson_kartes_controller.rb" . 417)
+ ("/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/controllers/"
+  (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/controllers/confirm_controller.rb"))
+ ("/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/"
+  (dired-filename . "/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/1027.tex"))
+ ("/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/1027.tex" . 3303)
+ ("/Users/dor0thy/Developments/TOMs/app/controllers/lesson_kartes_controller.rb" . 74)
+ ("/Users/dor0thy/Documents/"
+  (dired-filename . "/Users/dor0thy/Documents/.localized"))
+ ("/Users/dor0thy/Developments/"
+  (dired-filename . "/Users/dor0thy/Developments/.DS_Store"))
+ ("/Users/dor0thy/Developments/TOMs/Gemfile.lock" . 9)
+ ("/Users/dor0thy/.emacs.d/elpa/git-gutter-20141025.606/git-gutter-autoloads.el" . 2325)
+ ("/Users/dor0thy/.emacs.d/elpa/helm-20141104.756/helm-autoloads.el" . 37848)
+ ("/Users/dor0thy/.emacs.d/elpa/async-20141001.151/async-autoloads.el" . 2460)
+ ("/Users/dor0thy/.emacs.d/elpa/flycheck-tcl-0.4/flycheck-tcl-autoloads.el" . 241)
+ ("/Users/dor0thy/.emacs.d/elpa/flycheck-20141102.652/flycheck-autoloads.el" . 4840)
+ ("/Users/dor0thy/.emacs.d/elpa/dash-20141008.712/dash-autoloads.el" . 217)
+ ("/Users/dor0thy/.emacs.d/elpa/pkg-info-20140610.630/pkg-info-autoloads.el" . 3738)
+ ("/Users/dor0thy/.emacs.d/elpa/epl-20140823.609/epl-autoloads.el" . 214)
+ ("/Users/dor0thy/.emacs.d/elpa/archives/gnu/archive-contents" . 5817)
+ ("/usr/local/Cellar/emacs/24.4/share/emacs/24.4/etc/COPYING" . 165))
