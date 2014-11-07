@@ -14,7 +14,8 @@
 
 ;;; can see some whitespaces and tab
 (require 'whitespace)
-(setq whitespace-style '(face tabs tab-mark spaces space-mark lines-tail trailing space-before-tab space-after-tab::space))
+(setq whitespace-style
+      '(face tabs tab-mark trailing space-before-tab space-after-tab::space))
 (setq whitespace-space-regexp "\\(\x3000+\\)")
 (setq whitespace-display-mappings
       '((space-mark ?\x3000 [?\□])
@@ -73,7 +74,7 @@
 
 ;;; change cursor color
 (if window-system (progn
- (setq initial-frame-alist '((width . 100)(height . 50)(top . 0)(left . 0)))
+ (setq initial-frame-alist '((width . 80)(height . 40)(top . 0)(left . 0)))
  ;;; (set-background-color "Black")
  ;;; (set-foreground-color "White")
  (set-cursor-color "yellow")
@@ -94,6 +95,7 @@
 (global-hl-line-mode)
 
 ;;; keymapping undo and redo
+(require 'redo+)
 (define-key global-map (kbd "C-z") 'undo)
 (define-key global-map (kbd "C-S-z") 'redo)
 
@@ -127,4 +129,30 @@
 (add-to-list 'auto-mode-alist '("\\.as[cp]x$"   . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb$"       . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?$"     . web-mode))
+
+;;; markdown-mode
+(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.txt" . markdown-mode) auto-mode-alist))
+(dolist (dir (list
+              "/sbin"
+              "/usr/sbin"
+              "/bin"
+              "/usr/bin"
+              "/opt/local/bin"
+              "/sw/bin"
+              "/usr/local/bin"
+              (expand-file-name "~/bin")
+              (expand-file-name "~/.emacs.d/bin")
+              ))
+ (when (and (file-exists-p dir) (not (member dir exec-path)))
+   (setenv "PATH" (concat dir ":" (getenv "PATH")))
+   (setq exec-path (append (list dir) exec-path))))
+
+;;; visualmode same vim
+(define-key global-map (kbd "C-i") (kbd "C-@"))
+
+;;; Beginning of line without brank spaces
+(define-key global-map (kbd "C-6") (kbd "M-m"))
 
