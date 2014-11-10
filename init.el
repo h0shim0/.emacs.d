@@ -156,3 +156,5 @@
 ;;; Beginning of line without brank spaces
 (define-key global-map (kbd "C-6") (kbd "M-m"))
 
+;;; git mode
+
