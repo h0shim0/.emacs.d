@@ -151,7 +151,7 @@
    (setq exec-path (append (list dir) exec-path))))
 
 ;;; visualmode same vim
-(define-key global-map (kbd "C-i") (kbd "C-@"))
+(define-key global-map (kbd "C-u") (kbd "C-@"))
 
 ;;; Beginning of line without brank spaces
 (define-key global-map (kbd "C-6") (kbd "M-m"))

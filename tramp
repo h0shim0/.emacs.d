@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/11/07 13:11:37 /Users/dor0thy/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/11/10 10:50:15 /Users/dor0thy/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -39,7 +39,8 @@
   ("perl" "\\perl")
   ("readlink" "\\readlink")
   ("ls" "/bin/ls --color=never")
-  ("ls-dired" t))
+  ("ls-dired" t)
+  ("uid-integer" 1002))
  (["sshx" nil "sit" nil nil]
   ("uname" "Linux 2.6.32-504.el6.i686")
   ("test" "test")
@@ -59,6 +60,4 @@
   ("readlink" "\\readlink")
   ("ls" "/bin/ls --color=never")
   ("ls-dired" t)
-  ("uid-integer" 500))
- (["sshx" nil "ubun" nil nil]
-  nil))
+  ("uid-integer" 500)))
