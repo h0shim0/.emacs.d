@@ -33,6 +33,9 @@
                     :foreground "GreenYellow"
                     :weight 'bold)
 
+;;; delete white space at the end of line before save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;;; save cursor place
 (require 'saveplace)
 (setq-default save-place t)
@@ -156,5 +159,25 @@
 ;;; Beginning of line without brank spaces
 (define-key global-map (kbd "C-6") (kbd "M-m"))
 
-;;; git mode
+;;; auto reload buffer when change file
+(global-auto-revert-mode 1)
 
+;;; reload buffer
+(defun revert-buffer-no-confirm (&optional force-reverting)
+  "Interactive call to revert-buffer. Ignoring the auto-save
+ file and not requesting for confirmation. When the current buffer
+ is modified, the command refuses to revert it, unless you specify
+ the optional argument: force-reverting to true."
+  (interactive "P")
+  ;;(message "force-reverting value is %s" force-reverting)
+  (if (or force-reverting (not (buffer-modified-p)))
+      (revert-buffer :ignore-auto :noconfirm)
+    (error "The buffer has been modified")))
+
+(global-set-key (kbd "s-r") 'revert-buffer-no-confirm)
+
+;;; template
+(auto-insert-mode)
+(setq auto-insert-directory "~/.emacs.d/templates/")
+(define-auto-insert "\\.html$" "html-template.html")
+(define-auto-insert "\\.tex$" "tex-template.tex")

@@ -1,5 +1,39 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/dor0thy/.emacs.d/recentf" . 2060)
+(("/Users/dor0thy/.emacs.d/init.el" . 5538)
+ ("/Users/dor0thy/.emacs.d/recentf" . 1919)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/spec/controllers/personal_kartes_controller_spec.rb" . 246)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/application_controller.rb" . 201)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/layouts/application.html.erb" . 71)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_card.html.erb" . 392)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/Gemfile" . 1110)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/confirm_controller.rb" . 447)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/personal_kartes_controller.rb" . 214)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/assets/javascripts/users/card.js" . 636)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/new.html.erb" . 316)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/"
+  (dired-filename . "/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_card_form.html.erb"))
+ ("/Users/dor0thy/"
+  (dired-filename . "/Users/dor0thy/.CFUserTextEncoding"))
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_header.html.erb" . 3264)
+ ("/Users/dor0thy/.emacs.d/themes/afternoon-theme.el" . 1599)
+ ("/Users/dor0thy/.emacs.d/themes/flatland-theme.el" . 6187)
+ ("/Users/dor0thy/.emacs.d/.git/"
+  (dired-filename . "/Users/dor0thy/.emacs.d/.git/config"))
+ ("/Users/dor0thy/.emacs.d/.git/config" . 68)
+ ("/Users/dor0thy/.emacs.d/elpa/git-commit-mode-0.13/git-commit-mode-autoloads.el" . 1562)
+ ("/Users/dor0thy/.emacs.d/elpa/git-rebase-mode-20140928.1547/git-rebase-mode-autoloads.el" . 735)
+ ("/Users/dor0thy/.emacs.d/elpa/gitconfig-mode-0.3/gitconfig-mode-autoloads.el" . 532)
+ ("/Users/dor0thy/.emacs.d/elpa/gitignore-mode-0.1/gitignore-mode-autoloads.el" . 538)
+ ("/Users/dor0thy/.emacs.d/"
+  (dired-filename . "/Users/dor0thy/.emacs.d/init.el"))
+ ("/Users/dor0thy/Developments/terachanbot/Procfile" . 31)
+ ("/Users/dor0thy/Developments/terachanbot/scripts/stabu.coffee" . 107)
+ ("/Users/dor0thy/Developments/yamatos_bot/"
+  (dired-filename . "/Users/dor0thy/Developments/yamatos_bot/scripts"))
+ ("/Users/dor0thy/Developments/yamatos_bot/scripts/"
+  (dired-filename . "/Users/dor0thy/Developments/yamatos_bot/scripts/events.coffee"))
+ ("/Users/dor0thy/Developments/"
+  (dired-filename . "/Users/dor0thy/Developments/.DS_Store"))
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/app/controllers/posts_controller.rb" . 1036)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/app/assets/javascripts/application.js" . 986)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/app/views/posts/index.html.erb" . 1259)
@@ -12,7 +46,6 @@
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/app/models/post.rb" . 71)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/db/migrate/20141108084431_create_users.rb" . 250)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/config/environments/development.rb" . 1470)
- ("/Users/dor0thy/.emacs.d/init.el" . 4516)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/README.md" . 550)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/db/seeds.rb" . 1764)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/getwill/app/views/posts/new.html.erb" . 76)
@@ -22,19 +55,13 @@
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/litalico/20141108_hackathon/.gitignore" . 11)
  ("/Applications/Emacs.app/"
   (dired-filename . "/Applications/Emacs.app/Contents"))
- ("/Users/dor0thy/"
-  (dired-filename . "/Users/dor0thy/.CFUserTextEncoding"))
- ("/Users/dor0thy/.emacs.d/"
-  (dired-filename . "/Users/dor0thy/.emacs.d/init.el"))
  ("/Users/dor0thy/.emacs.d/elpa/redo+-20131117.1151/redo+-autoloads.el" . 219)
  ("/Users/dor0thy/.emacs.d/elpa/markdown-mode+-20120829.510/markdown-mode+-autoloads.el" . 1278)
  ("/Users/dor0thy/.emacs" . 151)
  ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/"
   (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/sources"))
- ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_card.html.erb" . 4243)
  ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/myservlet/index.html" . 148)
  ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/index.jsp" . 1551)
- ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/lesson_kartes_controller.rb" . 6137)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_icon_box.html.erb" . 1020)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/assets/images/lesson_illustrations/warmups/201411061124_45.txt" . 26331)
  ("/Users/dor0thy/.emacs.d/elpa/color-theme-20080305.34/color-theme-autoloads.el" . 4768)
@@ -93,8 +120,6 @@
  ("/Users/dor0thy/Developments/TOMs/app/controllers/lesson_kartes_controller.rb" . 74)
  ("/Users/dor0thy/Documents/"
   (dired-filename . "/Users/dor0thy/Documents/.localized"))
- ("/Users/dor0thy/Developments/"
-  (dired-filename . "/Users/dor0thy/Developments/.DS_Store"))
  ("/Users/dor0thy/Developments/TOMs/Gemfile.lock" . 9)
  ("/Users/dor0thy/.emacs.d/elpa/git-gutter-20141025.606/git-gutter-autoloads.el" . 2325)
  ("/Users/dor0thy/.emacs.d/elpa/helm-20141104.756/helm-autoloads.el" . 37848)

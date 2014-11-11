@@ -49,7 +49,7 @@
        (background (if 256color "#1c1c1c" "#181a26"))
        ; (current-line (if 256color "#121212" "#14151E"))
        (current-line (if 256color "#121212" "#444444"))
-       (fringe-color "#222222")
+       (fringe-color "#004444")
        (block-background (if 256color "#262626" "#1F2232"))
        (selection "#103050")
        (foreground "#eaeaea")
