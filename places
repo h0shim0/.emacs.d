@@ -1,5 +1,19 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/dor0thy/.emacs.d/init.el" . 5538)
+(("/Users/dor0thy/.emacs.d/elpa/popup-20141002.320/popup-autoloads.el" . 219)
+ ("/Users/dor0thy/Desktop/"
+  (dired-filename . "/Users/dor0thy/Desktop/.DS_Store"))
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/lesson_kartes_controller.rb" . 563)
+ ("/Users/dor0thy/.zshrc" . 650)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_header.html.erb" . 6206)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_card_form.html.erb" . 2439)
+ ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/assets/stylesheets/toms.css" . 3821)
+ ("/Users/dor0thy/.emacs.d/viper" . 70)
+ ("/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/1027.tex" . 3322)
+ ("/Users/dor0thy/Developments/h0shim0.github.io/index.html" . 663)
+ ("/Users/dor0thy/Developments/h0shim0.github.io/javascript/index.js" . 472)
+ ("/Users/dor0thy/.emacs.d/init.el" . 3555)
+ ("/Users/dor0thy/Developments/h0shim0.github.io/css/index.css" . 411)
+ ("/Users/dor0thy/.emacs.d/elpa/js2-mode-20141105.154/js2-mode-autoloads.el" . 1108)
  ("/Users/dor0thy/.emacs.d/recentf" . 1919)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/spec/controllers/personal_kartes_controller_spec.rb" . 246)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/application_controller.rb" . 201)
@@ -14,7 +28,6 @@
   (dired-filename . "/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_card_form.html.erb"))
  ("/Users/dor0thy/"
   (dired-filename . "/Users/dor0thy/.CFUserTextEncoding"))
- ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/views/lesson_kartes/_header.html.erb" . 3264)
  ("/Users/dor0thy/.emacs.d/themes/afternoon-theme.el" . 1599)
  ("/Users/dor0thy/.emacs.d/themes/flatland-theme.el" . 6187)
  ("/Users/dor0thy/.emacs.d/.git/"
@@ -95,7 +108,6 @@
   (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/.."))
  ("/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/select_pref/"
   (dired-filename . "/sshx:sit:/home/sit/apache-tomcat-5.5.34/webapps/jdbc-exercise/WEB-INF/classes/select_pref/.."))
- ("/Users/dor0thy/.zshrc" . 674)
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/"
   (dired-filename . "/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers"))
  ("/sshx:ubuntu-dor0thy:/home/dor0thy/Documents/TOMs/app/controllers/"
@@ -116,11 +128,8 @@
   (dired-filename . "/sshx:dor0thy@192.168.33.10:/home/dor0thy/Documents/TOMs/app/controllers/confirm_controller.rb"))
  ("/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/"
   (dired-filename . "/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/1027.tex"))
- ("/Users/dor0thy/Documents/tsukuba/embedded_system/report1027/1027.tex" . 3303)
- ("/Users/dor0thy/Developments/TOMs/app/controllers/lesson_kartes_controller.rb" . 74)
  ("/Users/dor0thy/Documents/"
   (dired-filename . "/Users/dor0thy/Documents/.localized"))
- ("/Users/dor0thy/Developments/TOMs/Gemfile.lock" . 9)
  ("/Users/dor0thy/.emacs.d/elpa/git-gutter-20141025.606/git-gutter-autoloads.el" . 2325)
  ("/Users/dor0thy/.emacs.d/elpa/helm-20141104.756/helm-autoloads.el" . 37848)
  ("/Users/dor0thy/.emacs.d/elpa/async-20141001.151/async-autoloads.el" . 2460)

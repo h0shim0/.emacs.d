@@ -124,6 +124,15 @@
 ;;; setting transparency
 (set-frame-parameter nil 'alpha 75)
 
+;;; JavaScript js2-mode
+(require 'js2-mode)
+(defun js2-mode-hooks ()
+  (setq js2-basic-offset 2)
+  (setq c-basic-offset 2)
+  (setq indent-tabs-mode nil))
+(add-hook 'js2-mode 'js2-mode-hooks)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 ;;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml$"     . web-mode))
@@ -132,6 +141,14 @@
 (add-to-list 'auto-mode-alist '("\\.as[cp]x$"   . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb$"       . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?$"     . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css?\\'"    . web-mode))
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-m)
+(defun web-mode-hooks()
+  (setq indent-tabs-mode nil))
+(add-hook 'web-mode 'web-mode-hooks)
 
 ;;; markdown-mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
@@ -181,3 +198,8 @@
 (setq auto-insert-directory "~/.emacs.d/templates/")
 (define-auto-insert "\\.html$" "html-template.html")
 (define-auto-insert "\\.tex$" "tex-template.tex")
+
+;;; auto-complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(global-auto-complete-mode t)
