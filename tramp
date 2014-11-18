@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/11/16 00:40:12 /Users/dor0thy/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/11/18 23:00:15 /Users/dor0thy/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -28,7 +28,6 @@
    ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
   ("remote-shell" "/bin/sh")
   ("locale" "LC_ALL=en_US.utf8")
-  ("~" "/home/dor0thy")
   ("file-exists" "test -e")
   ("stat" "\\stat")
   ("id" "/usr/bin/id")
@@ -37,7 +36,6 @@
   ("perl-file-spec" t)
   ("perl-cwd-realpath" t)
   ("perl" "\\perl")
-  ("ls" "/bin/ls --color=never")
   ("readlink" "\\readlink"))
  (["sshx" nil "sit" nil nil]
   ("uname" "Linux 2.6.32-504.el6.i686")
