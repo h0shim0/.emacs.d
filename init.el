@@ -8,6 +8,9 @@
 (require 'pallet)
 (pallet-mode t)
 
+(require 'evil)
+(evil-mode 1)
+
 ;;; color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'afternoon t)
@@ -37,6 +40,9 @@
 (set-face-attribute 'whitespace-space nil
                     :foreground "GreenYellow"
                     :weight 'bold)
+
+;;; scroll
+(setq scroll-step 1)
 
 ;;; delete white space at the end of line before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

@@ -1,6 +1,6 @@
 (source gnu)
-(source melpa)
 (source marmalade)
+(source melpa)
 
 (depends-on "async")
 (depends-on "auto-complete")
@@ -10,6 +10,7 @@
 (depends-on "diminish")
 (depends-on "drag-stuff")
 (depends-on "epl")
+(depends-on "evil")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
@@ -24,6 +25,7 @@
 (depends-on "idle-highlight-mode")
 (depends-on "js2-mode")
 (depends-on "magit")
+(depends-on "markdown-mode")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
 (depends-on "package-build")
