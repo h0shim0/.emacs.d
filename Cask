@@ -1,7 +1,10 @@
+(source "melpa" "http://melpa.milkbox.net/packages/")
+(source "melpa-stable" "http://stable.melpa.org/packages")
 (source gnu)
 (source marmalade)
 (source melpa)
 
+(depends-on "elscreen")
 (depends-on "async")
 (depends-on "auto-complete")
 (depends-on "bind-key")
@@ -11,6 +14,7 @@
 (depends-on "drag-stuff")
 (depends-on "epl")
 (depends-on "evil")
+(depends-on "evil-nerd-commenter")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")

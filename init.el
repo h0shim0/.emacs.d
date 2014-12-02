@@ -8,8 +8,118 @@
 (require 'pallet)
 (pallet-mode t)
 
+;;; evil
+(add-to-list 'load-path "~/.emacs.d/evil/")
 (require 'evil)
 (evil-mode 1)
+(define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up)
+(evil-ex-define-cmd "q[uit]" 'evil-delete-buffer)
+(define-key evil-insert-state-map (kbd "C-y") nil)
+(defun save-and-delete-buffer()
+  (lambda ()
+    (interactive)
+    (save-buffer)(kill-buffer)))
+(evil-ex-define-cmd "wq" (lambda ()
+                           (interactive)(save-buffer)(kill-buffer)))
+
+;;; elscreen
+(setq elscreen-tab-display-control nil
+      elscreen-tab-display-kill-screen nil)
+(require 'elscreen)
+
+(evil-define-command evil-tab-new ()
+  :repeat nil
+  (setq count (or count 1))
+  (when (null (elscreen-get-frame-confs (selected-frame)))
+      (elscreen-start))
+  (elscreen-create))
+
+(evil-define-command evil-tab-edit (file)
+  :repeat nil
+  (interactive "<f>")
+  (evil-tab-new)
+  (evil-edit file))
+
+(evil-define-command evil-tab-find-file-at-point (&optional count)
+  :repeat nil
+  (let ((buffer (current-buffer)))
+    (evil-tab-new)
+    (switch-to-buffer buffer))
+  (find-file-at-point))
+
+(evil-define-command evil-tab-find-file-at-point-with-line (&optional count)
+  :repeat nil
+  (let ((buffer (current-buffer)))
+    (evil-tab-new)
+    (switch-to-buffer buffer))
+  (evil-find-file-at-point-with-line))
+
+(evil-define-command evil-tab-close (&optional count)
+  :repeat nil
+  (interactive "P")
+  (let ((buffer (current-buffer)))
+    (elscreen-kill count)
+    (switch-to-buffer buffer)))
+
+(evil-define-command evil-tab-only (&optional bang)
+  :repeat nil
+  (interactive "P")
+  (let ((buffer (current-buffer)))
+    (elscreen-kill-others count)
+    (switch-to-buffer buffer)))
+
+(evil-define-command evil-tab-next (&optional count)
+  :repeat nil
+  (interactive "P")
+  (if count
+      (elscreen-goto count)
+    (elscreen-next)))
+
+(evil-define-command evil-tab-previous (&optional count)
+  :repeat nil
+  (interactive "P")
+  (if count
+      (let* ((screens (length (elscreen-get-screen-list)))
+             (screen (- screens count 1)))
+        (when (>= screen 0)
+          (elscreen-goto screen)))
+    (elscreen-previous)))
+
+(evil-define-command evil-tab-first ()
+  :repeat nil
+  (elscreen-goto 0))
+
+(evil-define-command evil-tab-last ()
+  :repeat nil
+  (elscreen-goto (1- (length (elscreen-get-screen-list)))))
+
+(defadvice evil-quit (around tabclose-or-quit activate)
+  (if (> (length (elscreen-get-screen-list)) 1)
+      (condition-case nil
+          (delete-window)
+        (error (evil-tab-close)))
+    ad-do-it))
+
+(evil-ex-define-cmd "tabnew" #'evil-tab-new)
+(evil-ex-define-cmd "tabe[dit]" #'evil-tab-edit)
+(evil-ex-define-cmd "tabc[lose]" #'evil-tab-close)
+(evil-ex-define-cmd "tabo[nly]" #'evil-tab-only)
+(evil-ex-define-cmd "tabn[ext]" #'evil-tab-next)
+(evil-ex-define-cmd "tabp[revious]" #'evil-tab-previous)
+(evil-ex-define-cmd "tabN[ext]" #'evil-tab-previous)
+(evil-ex-define-cmd "tabfir[st]" #'evil-tab-first)
+(evil-ex-define-cmd "tabl[ast]" #'evil-tab-last)
+(evil-ex-define-cmd "tabs" #'elscreen-display-screen-name-list)
+
+(define-key evil-motion-state-map (kbd "gt") #'evil-tab-next)
+(define-key evil-motion-state-map (kbd "gT") #'evil-tab-previous)
+(define-key evil-window-map (kbd "gf") #'evil-tab-find-file-at-point)
+(define-key evil-window-map (kbd "gF") #'evil-tab-find-file-at-point-with-line)
+
+;; (require 'evil-mode-line)
+(setq evilnc-hotkey-comment-operator (kbd "C-c C-c"))
+(require 'evil-nerd-commenter)
+(evilnc-default-hotkeys)
 
 ;;; color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -84,7 +194,7 @@
 (tool-bar-mode 0)
 
 ;;; rectangular select mode
-(cua-mode t)
+;;; (cua-mode t)
 
 ;;; change cursor color
 (if window-system (progn
@@ -133,7 +243,7 @@
                     :height 150)
 
 ;;; setting transparency
-(set-frame-parameter nil 'alpha 75)
+(set-frame-parameter nil 'alpha 85)
 
 ;;; JavaScript js2-mode
 (require 'js2-mode)
@@ -182,10 +292,10 @@
    (setq exec-path (append (list dir) exec-path))))
 
 ;;; visualmode same vim
-(define-key global-map (kbd "C-u") (kbd "C-@"))
+;;; (define-key global-map (kbd "C-u") (kbd "C-@"))
 
 ;;; Beginning of line without brank spaces
-(define-key global-map (kbd "C-6") (kbd "M-m"))
+;;; (define-key global-map (kbd "C-6") (kbd "M-m"))
 
 ;;; auto reload buffer when change file
 (global-auto-revert-mode 1)
