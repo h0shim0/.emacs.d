@@ -116,8 +116,7 @@
 (define-key evil-window-map (kbd "gf") #'evil-tab-find-file-at-point)
 (define-key evil-window-map (kbd "gF") #'evil-tab-find-file-at-point-with-line)
 
-;; (require 'evil-mode-line)
-(setq evilnc-hotkey-comment-operator (kbd "C-c C-c"))
+(require 'evil-mode-line)
 (require 'evil-nerd-commenter)
 (evilnc-default-hotkeys)
 
@@ -198,7 +197,7 @@
 
 ;;; change cursor color
 (if window-system (progn
- (setq initial-frame-alist '((width . 80)(height . 40)(top . 0)(left . 0)))
+ (setq initial-frame-alist '((width . 100)(height . 50)(top . 40)(left . 100)))
  ;;; (set-background-color "Black")
  ;;; (set-foreground-color "White")
  (set-cursor-color "yellow")
